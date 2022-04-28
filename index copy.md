@@ -1,4 +1,4 @@
-# [OpenWrt-Rpi](https://github.com/SuLingGG/OpenWrt-Rpi)
+# [OpenWrt-Rpi]
 
 ## 项目介绍
 
