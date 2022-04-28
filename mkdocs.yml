@@ -1,0 +1,55 @@
+site_name: manual
+
+extra:
+  search:
+    language: 'en,zh,jp'
+theme:
+  name: material
+  language: 'zh'
+  # logo: ./favicon.jpg
+  # favicon: ./favicon.jpg
+  palette:
+    primary: 'Light Blue'
+    accent: 'Light Blue'
+  feature:
+    tabs: true
+  font:
+    text: Microsoft YaHei
+    code: Courier New
+ 
+ 
+plugins:
+  - search
+  - git-revision-date-localized:  # 在文档最后，添加 markdown 的最后修改时间 https://squidfunk.github.io/mkdocs-material/plugins/revision-date/
+      type: iso_datetime
+
+markdown_extensions: 
+  - admonition # 支持 markdown 文档的 notify 等样式 https://squidfunk.github.io/mkdocs-material/extensions/admonition/#bug
+  - codehilite: # 给 markdown 的代码得数着色，https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+      guess_lang: false
+      linenums: false
+  - toc: # 给 markdown 标题，加上锚点 https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      #emoji_generator: !!python/name:pymdownx.emoji.to_png_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_awesome
+      #emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
